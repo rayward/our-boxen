@@ -1,0 +1,2 @@
+mysql::ensure: absent
+mysql::enable: false
