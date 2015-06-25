@@ -75,7 +75,9 @@ node default {
   ruby::version { '2.2.6': }
 
   # default php
-  php::version { '5.6': }
+  class { 'php::global':
+    version => '5.6'
+  }
 
   # common, useful packages
   package {
