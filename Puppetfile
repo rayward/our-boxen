@@ -58,13 +58,12 @@ github "xquartz",     "1.2.1"
 github "nvm",         "1.0.0"
 
 # php deps
-github "php",         "2.0.1"
+github "php",         "3.0.0", :repo => "rayward/puppet-php"
 github "wget",        "1.0.1"
 github "autoconf",    "1.0.0"
 github "libtool",     "1.0.0"
 github "pcre",        "1.0.0"
 github "libpng",      "1.0.0"
-github "mysql",       "2.1.2"
 github "imagemagick", "1.3.0"
 
 github "vagrant",     "3.3.0"
