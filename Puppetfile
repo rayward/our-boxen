@@ -56,7 +56,16 @@ github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 
 github "nvm",         "1.0.0"
+
+# php deps
 github "php",         "2.0.1"
+github "wget",        "1.0.1"
+github "autoconf",    "1.0.0"
+github "libtool",     "1.0.0"
+github "pcre",        "1.0.0"
+github "libpng",      "1.0.0"
+github "mysql",       "2.1.2"
+
 github "vagrant",     "3.3.0"
 github "virtualbox",  "1.0.13"
 
