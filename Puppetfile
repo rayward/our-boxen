@@ -40,23 +40,25 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 github "brewcask",    "0.0.6"
 github "dnsmasq",     "2.0.1"
-github "foreman",     "1.2.0"
 github "gcc",         "2.2.1"
 github "git",         "2.7.9"
 github "go",          "2.1.0"
 github "homebrew",    "1.12.0"
 github "hub",         "1.4.1"
 github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
-github "nginx",       "1.4.5"
 github "nodejs",      "4.0.1"
 github "openssl",     "1.0.0"
-github "phantomjs",   "2.4.0"
 github "pkgconfig",   "1.0.0"
 github "repository",  "2.4.1"
 github "ruby",        "8.5.2"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
+
+github "nvm",         "1.0.0"
+github "php",         "2.0.1"
+github "vagrant",     "3.3.0"
+github "virtualbox",  "1.0.13"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
