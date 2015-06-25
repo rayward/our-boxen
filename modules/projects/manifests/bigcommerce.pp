@@ -6,9 +6,16 @@ class projects::bigcommerce {
   include vagrant
   include virtualbox
 
+  $repo_dir = "${boxen::config::srcdir}/bigcommerce"
+
   boxen::project { 'bigcommerce':
     source  => 'bigcommerce/bigcommerce-app-vm',
-    ruby    => '1.9.3',
-    php     => '5.6'
+    dir     => $repo_dir,
+    ruby    => '1.9.3'
+  }
+
+  php::local { $repo_dir:
+    version => '5.6',
+    require => Boxen::Project['bigcommerce']
   }
 }
