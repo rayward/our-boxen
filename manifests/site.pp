@@ -59,7 +59,7 @@ node default {
   include homebrew
   include php
   include php::composer
-  include php::extension::imagick
+  # include php::extension::imagick
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
