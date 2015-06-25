@@ -74,6 +74,10 @@ node default {
   ruby::version { '2.0.0': }
   ruby::version { '2.2.6': }
 
+  class { 'mysql::config':
+    ensure => 'absent'
+  }
+
   # default php
   php::version { '5.6': }
 

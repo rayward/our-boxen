@@ -64,7 +64,7 @@ github "autoconf",    "1.0.0"
 github "libtool",     "1.0.0"
 github "pcre",        "1.0.0"
 github "libpng",      "1.0.0"
-#github "mysql",       "2.1.2"
+github "mysql",       "2.1.2"
 github "imagemagick", "1.3.0"
 
 github "vagrant",     "3.3.0"
