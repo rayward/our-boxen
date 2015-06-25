@@ -3,7 +3,6 @@ class projects::bigcommerce {
   include php
   include php::composer
   include nodejs
-  include nvm
   include vagrant
   include virtualbox
 
