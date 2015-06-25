@@ -53,7 +53,6 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
   include git
   include hub
   include homebrew
@@ -75,9 +74,7 @@ node default {
   ruby::version { '2.2.6': }
 
   # default php
-  class { 'php::global':
-    version => '5.6'
-  }
+  php::version { '5.6.9': }
 
   # common, useful packages
   package {
