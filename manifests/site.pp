@@ -56,6 +56,10 @@ node default {
   include dnsmasq
   include git
   include hub
+  include homebrew
+  include php
+  include php::composer
+  include php::extension::imagick
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -68,7 +72,10 @@ node default {
   # default ruby versions
   ruby::version { '1.9.3': }
   ruby::version { '2.0.0': }
-  ruby::version { '2.1.2': }
+  ruby::version { '2.2.6': }
+
+  # default php
+  php::version { '5.6': }
 
   # common, useful packages
   package {
