@@ -7,17 +7,11 @@ class projects::bigcommerce {
   }
 
   $ruby_version = '1.9.3'
-  $node_version = 'v0.12'
 
   ruby_gem { "bundler for ${ruby_version}":
     gem          => 'bundler',
     version      => '~> 1.8',
     ruby_version => $ruby_version,
-    require      => Boxen::Project['bigcommerce']
-  }
-
-  nodejs::module { 'bower':
-    node_version => $node_version,
     require      => Boxen::Project['bigcommerce']
   }
 
