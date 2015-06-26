@@ -15,7 +15,7 @@ class projects::bigcommerce {
     require      => Boxen::Project['bigcommerce']
   }
 
-  boxen::project { 'bigcommerce':
+  boxen::project { 'bigcommerce-app-vm':
     source  => 'bigcommerce/bigcommerce-app-vm',
     ruby    => $ruby_version
   }
