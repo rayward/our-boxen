@@ -12,7 +12,7 @@ class projects::bigcommerce {
     gem          => 'bundler',
     version      => '~> 1.8',
     ruby_version => $ruby_version,
-    require      => Boxen::Project['bigcommerce']
+    require      => Boxen::Project['bigcommerce-app-vm']
   }
 
   boxen::project { 'bigcommerce-app-vm':
