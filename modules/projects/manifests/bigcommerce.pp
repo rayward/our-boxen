@@ -6,7 +6,7 @@ class projects::bigcommerce {
     version => '1.7.1'
   }
 
-  $ruby_version = '1.9.3'
+  $ruby_version = '2.0.0'
 
   ruby_gem { "bundler for ${ruby_version}":
     gem          => 'bundler',
